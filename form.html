@@ -1,7 +1,42 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <title>Student Form</title>
+        <title>Saqia's Burger</title>
     </header>
-    
+    <body>
+        <form action="/burger.html" method="POST">
+
+
+            <head>
+              <h1>WELCOME TO SAQIA'S BURGER</h1>
+              <hr>
+              <h3>LOGIN TO CREATE A BURGER</h3>
+            </head>
+
+            <section class="login">
+              <hr>
+              <label for="usrnm">Username</label>
+              <input type="text" name="usrnm" id="meat"><br><br>
+              <label for="userpw">Password</label>
+              <input type="password" name="password" id="userpw">
+            </section>
+
+            <section class="patty">
+                <hr>
+                <label for="protein">Patty type:</label><br>
+                <select>
+                    <option value="chicken">Chicken</option>
+                    <option value="beef">Beef</option>
+                    <option value="fish">Fish</option>
+                    <option value="vegan">Vegan</option>
+                </select><br>
+                <label for="amount">Number of patties:</label><br>
+                <input id="amount" type="number" name="amount" step="1" min="0" max="5"><br>
+                <label for="cook">How well do you want your patty to be cooked?</label>
+            </section>
+
+
+        </form>
+    </body>
+
 </html>
