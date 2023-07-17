@@ -6,7 +6,7 @@
     <body>
         <form action="/burger.html" method="POST">
 
-
+        <main>
             <head>
               <h1>WELCOME TO SAQIA'S BURGER</h1>
               <hr>
@@ -42,12 +42,40 @@
                 <hr>
                 <p>Extra Toppings</p>
 
-                <label for="cheese">Cheese</label>
-                <input type="checkbox" id="cheese" name="toppings">
+                <label for="lettuce">Lettuce</label>
+                <input type="checkbox" id="lettuce" name="toppings"><br>
                 <label for="olives">Olive</label>
-                <input type="checkbox" id="olives" name="toppings">
-
+                <input type="checkbox" id="olives" name="toppings"><br>
+                <label for="pickles">Pickle</label>
+                <input type="checkbox" id="pickles" name="toppings"><br>
+                <hr>
+                <p>Would you like to add cheese?</p>
+                <input type="radio" id="yes" value="Yes" name="cheese">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" value="No" name="cheese"> 
+                <label for="no">No</label> 
             </section>
+
+            <section class="saucelist">
+                <label for="sauce">Sauce type</label>
+                <input type="text" list="sauces" id="sauce" name="sauce">
+                <datalist id="sauces">
+                    <option value="Mayonnaise"></option>
+                    <option value="Ketchup"></option>
+                    <option value="Pesto"></option>
+                </datalist>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <label for="comment">Allergies</label><br>
+            <textarea id="comment" name="allergy" rows="3" cols="40" required></textarea><br>
+            <input type="submit" value="Send">
+        </footer>
+
+
 
 
         </form>
