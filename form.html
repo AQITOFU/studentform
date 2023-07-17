@@ -31,8 +31,22 @@
                     <option value="vegan">Vegan</option>
                 </select><br>
                 <label for="amount">Number of patties:</label><br>
-                <input id="amount" type="number" name="amount" step="1" min="0" max="5"><br>
-                <label for="cook">How well do you want your patty to be cooked?</label>
+                <input id="amount" type="number" name="patty" step="1" min="0" max="5"><br>
+                <label for="cook">How well do you want your patty to be cooked?</label><br>
+                RARE
+                <input type="range" id="cook" name="patty" step="1" min="0" max="5">
+                WELL-DONE<br>
+            </section>
+
+            <section class="toppings">
+                <hr>
+                <p>Extra Toppings</p>
+
+                <label for="cheese">Cheese</label>
+                <input type="checkbox" id="cheese" name="toppings">
+                <label for="olives">Olive</label>
+                <input type="checkbox" id="olives" name="toppings">
+
             </section>
 
 
